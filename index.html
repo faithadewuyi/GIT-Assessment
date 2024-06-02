@@ -28,23 +28,169 @@
     <ul class="navs">
       <li><a href="#">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
-      <li><a href="product.html">PRODUCTS</a></li>
+      <li><a href="#products">PRODUCTS</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
-  <section id="home">
+  <section id="about">
     <div class="home-container">
       <div class="textContainer">
         <h3>Elevate your space with Timeless Elegance</h3>
-        <p>With DecorDreams, you'll find innovative decor solutions that maximize the potential of your living space, making every room both functional and stunning.</p>
-        <button>Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+        <p>With <span class="decor"><b>DecorDreams</b></span>, you'll find innovative decor solutions that maximize the potential of your living space, making every room both functional and stunning.</p>
+        <button class="cta" onclick="window.location.href='#products'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+
       </div>
     </div>
-    <h3>Elevate your space with Timeless Elegance</h3>
-    <p>With DecoDreams, you'll find innovative decor solutions that maximize the potential of your living space, making every room both functional and stunning.</p>
-    <h3>Elevate your space with Timeless Elegance</h3>
-    <p>With DecoDreams, you'll find innovative decor solutions that maximize the potential of your living space, making every room both functional and stunning.</p>
-  </section>
-  <footer></footer>
+    </section>
+    <section id="products" >
+      <h2 class="heading">Explore Our Products </h2>
+      <div class="cards-wrapper">
+        <div class="card-container">
+          <div class="card-img">
+            <img src="images/1.jpg" alt="Denim Jeans" >
+            <h1>Scented Diffuse</h1>
+          </div>
+            <p class="price">#50,000</p>
+            <button>Order Now</button>
+          </div> 
+          <div class="card-container">
+            <div class="card-img">
+              <img src="images/5.jpg" alt="Denim Jeans" >
+              <h1>Portable Dinning </h1>
+            </div>
+              <p class="price">#120,000</p>
+              
+              <button>Order Now</button>
+            </div> 
+            <div class="card-container">
+              <div class="card-img">
+                <img src="images/8.jpg" alt="Denim Jeans" >
+                <h1>Decorative shelf</h1>
+              </div>
+                <p class="price">#80,000</p>
+                
+                <button>Order Now</button>
+              </div> 
+              <div class="card-container">
+                <div class="card-img">
+                  <img src="images/9.jpg" alt="Denim Jeans" >
+                  <h1>Flowery Vase</h1>
+                </div>
+                  <p class="price">#10,000</p>
+                  
+                  <button>Order Now</button>
+                </div> 
+                <div class="card-container">
+                  <div class="card-img">
+                    <img src="images/6.jpg" alt="Denim Jeans" >
+                    <h1>Chandellier</h1>
+                  </div>
+                    <p class="price">#200,000</p>
+                    
+                    <button>Order Now</button>
+                  </div> 
+                  <div class="card-container">
+                    <div class="card-img">
+                      <img src="images/9.jpg" alt="Denim Jeans" >
+                      <h1>Flowery Vase</h1>
+                    </div>
+                      <p class="price">#10,000</p>
+                      
+                      <button>Order Now</button>
+                    </div> 
+                    <div class="card-container">
+                      <div class="card-img">
+                        <img src="images/1.jpg" alt="Denim Jeans" >
+                        <h1>Scented Diffuse</h1>
+                      </div>
+                        <p class="price">#50,000</p>
+                        
+                        <button>Order Now</button>
+                      </div> 
+                      <div class="card-container">
+                        <div class="card-img">
+                          <img src="images/8.jpg" alt="Denim Jeans" >
+                          <h1>Decorative Shelf</h1>
+                        </div>
+                          <p class="price">#150,000</p>
+                          
+                          <button>Order Now</button>
+                        </div> 
+                        <div class="card-container">
+                          <div class="card-img">
+                            <img src="images/5.jpg" alt="Denim Jeans" >
+                            <h1>Dinning Set</h1>
+                          </div>
+                            <p class="price">#200,000</p>
+                            
+                            <button>Order Now</button>
+                          </div> 
+           </div>
+        
+    </section>
+    <section id="contact">
+      <h2 class="heading">Reach Out To Us </h2>
+      <div class="contact">
+       <div class="container">
+       <form action="">
+        
+            <label for="fname">Full Name 👩‍🚀</label>
+            <input 
+            type="text" 
+            id="fname"
+            name="firstname" placeholder="Your name.." required>
+                 
+            <label for="Email">Your Email</label>
+                <input 
+                    type="email" 
+                    id="Email" 
+                    name="Email"
+                    placeholder="faith@gitcohort7.com"
+                    required>
+        
+            <label for="country">Location</label>
+            <select id="country" name="country">
+              <option value="australia">Ibadan</option>
+              <option value="canada">Lagos Island</option>
+              <option value="usa">Lagos Mainland</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Type Your Message.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        </form>
+        </div> 
+      </div>
+    </section>
+    <footer>
+      <div class="footerflex">
+        <div class="footerText">
+          <h2>DecorDreams</h2>
+          <p>DecorDreams: Home of classy interior decorations</p>
+         
+        </div>
+        
+        <div class="footerText" id="contact">
+          <h2>Contact Us</h2>
+          <p><i class="fa-brands fa-facebook"> </i> Facebook</p>
+          <p><i class="fa-brands fa-instagram"> </i> Instagram</p>
+          <p><i class="fa-brands fa-twitter"> </i> Twitter</p>
+          <p><i class="fa-brands fa-github"> </i> GitHub</p>
+        </div>
+        <div class="footerText">
+          <h2>Quick Links</h2>
+       
+            <p><a href="#">HOME</a></p>
+            <p><a href="#about">ABOUT</a></p>
+            <p><a href="#products">PRODUCTS</a></p>
+            <p><a href="#contact">CONTACT</a></p>
+          
+        </div>
+      </div>
+      <p id="last">
+        &copy; 2024 Digital. All Rights Reserved | Developed by Faith Adewuyi
+      </p>
+    </footer>
 </body>
 </html>
