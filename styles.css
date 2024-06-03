@@ -2,25 +2,32 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  
 }
+body {
+  overflow-x: hidden; 
+}
+
+/* Nav Base style for all screen sizes */
+
 nav {
   display: flex;
   flex-flow: row wrap;
   background-color: #9e7c63;
   color: #fff;
-  margin: 0;
-  padding: 25px 40px;
+  padding: 15px 20px;
   justify-content: space-between;
-  
+  width: 100%;
+  overflow:hidden;
 }
 
-.navs {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3.5rem;
-}
+ .navs {
+display: flex;
+align-items: center;
+gap: 3.5rem;
+flex-direction: column;
+} 
+
 
 nav .name {
   display: flex;
@@ -30,6 +37,8 @@ nav img {
   width: 80px;
   height: 80px;
   border-radius: 10px;
+  margin-top: 0.8em;
+  margin-right: 1rem;
   
 }
 
@@ -38,6 +47,7 @@ nav>ul li {
   list-style: none;
   text-decoration: none;
   font-weight: 600;
+  padding: 1em;
 }
 nav .name>h1 {
   font-size: 35px;
@@ -50,13 +60,34 @@ nav .name>h1 {
 nav ul li>a {
   text-decoration: none;
   color: #fff;
+  display: block;
+  
 }
+/* Nav styles for medium and larger */
+@media (min-width: 678px){
+   
+  .navs {
+    flex-direction: row;
+    padding: 2em 4em;
+   
+  }
+  }
+  /* Styles for large screens */
+@media (min-width: 1024px) {
+  .navs a {
+    display: flex;
+    align-items: center;
+  }
 
+}
 nav li:hover {
   border-bottom: 1px solid #fff;
   color: #8d8984;
 }
 
+/* Nav styling ends */
+
+/* About section Begins */
 .home-container{
   background-image: url('images/background1.jpg');
   width: 100%;
@@ -67,7 +98,9 @@ nav li:hover {
 .textContainer{
   padding-top: 150px;
   padding-left:60px;
-  width: 500px;
+  width: 100%;
+  max-width: 90%;
+  
 
 }
 .textContainer h3{
@@ -79,7 +112,7 @@ nav li:hover {
   font-weight: 800;
 
 }
-p {
+.textContainer p {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
@@ -114,8 +147,42 @@ span.decor{
 
 .cta i {
   margin-left: 8px; 
-  font-size: 15px /* Space between text and arrow icon */
+  font-size: 15px 
 }
+
+/*About Section Styles for medium screens and larger */
+@media (min-width: 768px) {
+  .textContainer {
+    padding: 40px;
+    width: 60%;
+  }
+
+  .textContainer h3 {
+    font-size: 32px;
+  }
+
+  .textContainer p {
+    font-size: 20px;
+  }
+}
+
+/* Styles for large screens */
+@media (min-width: 1024px) {
+  .textContainer {
+    padding: 60px;
+    width: 50%;
+  }
+
+  .textContainer h3 {
+    font-size: 36px;
+  }
+
+  .textContainer p {
+    font-size: 22px;
+  }
+}
+
+/* Base style for product section */
 .heading{
   font-size: 32px;
   color: #686664;
@@ -123,13 +190,13 @@ span.decor{
   text-align: center;
   margin-top: 25px;
 }
+
 .cards-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap ;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
-  width: 1400px;
+  width: 100%;
 }
 .card-container {
   display: flex;
@@ -140,10 +207,11 @@ span.decor{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 2em auto;
-  width: 80%;
+  margin:  auto;
+  width: 100%;
+  max-width: 300px;
   height: fit-content;
-  padding: 2em 0;
+  padding: 2em 1em;
   border-radius: 10% 2%;
   border: 2px solid #eee;
   transition: transform 0.3s ease-in-out;
@@ -151,12 +219,13 @@ span.decor{
 }
 
 .card-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   
 }
 
 .card-img {
-  width: 12rem;
+  width: 100%;
+  max-width: 12rem;
   margin: auto;
 }
 
@@ -165,11 +234,23 @@ span.decor{
   font-weight: 600;
 
 }
-.card-img>img {
+.card-img img {
   width: 100%;
-  /* height: 130px; */
   border-radius: 5px;
 
+}
+/* Responsiveness for product section */
+@media (min-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1024px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card-container button {
@@ -189,23 +270,9 @@ span.decor{
   color:#eee;
 }
 
-@media (min-width:900px) {
-  .cards-wrapper {
-      width: 70%;
-      display: flex;
-      flex-wrap: wrap;
-      margin: auto;
 
-  }
 
-  .card-container {
-      flex: 0 0 calc(33.33% - 30px);
-      height: fit-content;
-      min-height: 200px;
-      padding: 15px;
-  }
-}
-
+/* Contact section */
 .contact {
   display: flex;
   justify-content: center;
@@ -267,6 +334,12 @@ footer {
   color: beige;
   padding: 2rem 0;
 }
+.name img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  
+}
 
 .footerflex {
   margin: auto;
@@ -306,5 +379,17 @@ footer a {
 @media (max-width:700px) {
   .footerflex {
     display: block;
+    padding: 2em;
+    margin: 2em;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 15px;
+    
+   
+   
   }
 }

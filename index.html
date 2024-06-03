@@ -22,7 +22,7 @@
 <body>
   <nav>
     <div class="name">
-      <img src="./images/logo.png" alt="Scent Dome logo" />
+      <img src="./images/logo.png" alt="Decor Dreams logo" />
       <h1>DecorDreams</h1>
     </div>
     <ul class="navs">
@@ -32,6 +32,7 @@
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
+  <!-- About section -->
   <section id="about">
     <div class="home-container">
       <div class="textContainer">
@@ -132,19 +133,19 @@
       <h2 class="heading">Reach Out To Us </h2>
       <div class="contact">
        <div class="container">
-       <form action="">
+       <form id="contact-form">
         
             <label for="fname">Full Name 👩‍🚀</label>
             <input 
             type="text" 
             id="fname"
-            name="firstname" placeholder="Your name.." required>
+            name="fullname" placeholder="Your name.." required>
                  
             <label for="Email">Your Email</label>
                 <input 
                     type="email" 
                     id="Email" 
-                    name="Email"
+                    name="email"
                     placeholder="faith@gitcohort7.com"
                     required>
         
@@ -155,8 +156,8 @@
               <option value="usa">Lagos Mainland</option>
             </select>
         
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Type Your Message.." style="height:200px"></textarea>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Type Your Message.." style="height:200px"></textarea>
         
             <input type="submit" value="Submit">
         </form>
@@ -164,10 +165,16 @@
       </div>
     </section>
     <footer>
+   
       <div class="footerflex">
+        <div class="name">
+          <img src="./images/logo.png" alt="Scent Dome logo" />
+          
+        </div>
         <div class="footerText">
           <h2>DecorDreams</h2>
-          <p>DecorDreams: Home of classy interior decorations</p>
+          <p>GIT Cohort 7.0</p>
+          <p>Frontend Track, Lagos Nigeria</p>
          
         </div>
         
@@ -192,5 +199,6 @@
         &copy; 2024 Digital. All Rights Reserved | Developed by Faith Adewuyi
       </p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
