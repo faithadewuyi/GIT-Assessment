@@ -11,11 +11,12 @@ You can view a live demo of the project [here](https://decor-dreams.vercel.app).
 
 ## Features
 
-- Responsive navigation bar
+- Responsive design using grid and flexbox
 - About section with a background image and call-to-action button
 - Products section with responsive product cards
 - Contact form
 - Footer with contact information and quick links
+- Logo designed using canva
 
 ## Technologies Used
 
