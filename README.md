@@ -26,4 +26,12 @@ You can view a live demo of the project [here](https://decor-dreams.vercel.app).
 - Google Fonts
 - Font Awesome
 
+## Interface Preview
 
+Below is a preview of the Decor Dreams interface:
+
+![Home Page](https://i.imgur.com/uaoSAdF.png)
+
+![Product page](https://i.imgur.com/yDte9zZ.png)
+
+![contact Section](https://i.imgur.com/w9dKe4O.png)
